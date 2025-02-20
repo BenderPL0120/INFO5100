@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<?import java.lang.String?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.MainController"
+      prefHeight="400.0" prefWidth="600.0"
+      alignment="CENTER" spacing="10"
+      styleClass="root">
+
+  <stylesheets>
+    <String fx:value="/view/style.css"/>
+  </stylesheets>
+
+  <Label text="User Register System" styleClass="title-label"/>
+
+  <HBox spacing="10" alignment="CENTER">
+    <Label text="Name:" styleClass="field-label"/>
+    <TextField fx:id="nameField" promptText="Please enter your name" prefWidth="200"/>
+  </HBox>
+
+  <HBox spacing="10" alignment="CENTER">
+    <Label text="Age:" styleClass="field-label"/>
+    <TextField fx:id="ageField" promptText="Please enter your age" prefWidth="200"/>
+  </HBox>
+
+  <HBox spacing="10" alignment="CENTER">
+    <Label text="Email:" styleClass="field-label"/>
+    <TextField fx:id="emailField" promptText="Please enter your email" prefWidth="200"/>
+  </HBox>
+
+  <HBox alignment="CENTER" spacing="10">
+    <Button text="Submit" onAction="#handleSubmit" styleClass="submit-button"/>
+  </HBox>
+
+</VBox>

@@ -1,0 +1,22 @@
+.title-label {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+}
+
+.field-label {
+    -fx-font-size: 14;
+}
+
+.submit-button {
+    -fx-font-size: 14;
+    -fx-padding: 5 10;
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.root {
+    -fx-font-family: "Noto Sans";
+}
